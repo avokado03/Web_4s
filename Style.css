@@ -3,5 +3,52 @@
 }
 
 .div_visible{
-    display: block;
+    display: grid;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 9fr 9fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "description description description"
+      "lab1_con lab1_con lab1_con"
+      "lab2_con lab2_con lab2_con"
+      "test test test"
+      "footer footer footer";
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . .";
+    grid-area: header;
+  }
+  
+  .description {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". .";
+    grid-area: description;
+  }
+  
+  .lab1_con {grid-area: lab1_con;}
+
+  .lab2_con { grid-area: lab2_con; }
+  
+  .test { grid-area: test; }
+  
+  .footer { grid-area: footer; }
+  
+  
