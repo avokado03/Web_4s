@@ -229,18 +229,18 @@ function startTest() {
 
 function setQuestion(e) {
     if (currentCount != 0)
-        userSum += (e.currentTarget.value ? 1 : 0);
+        userSum += +e.currentTarget.value;
+    if (currentCount == test.length)
+        endOfTest();
     let question = test[currentCount];
     document.getElementsByClassName('test_header')[0].innerHTML = question.text;
     for (let i = 0; i < question.answers.length; i++) {
         let btnClass = 'answer_' + i;
         let button = document.getElementsByClassName(btnClass)[0];
         button.textContent = question.answers[i].text;
-        button.value = question.answers[i].isTrue;
+        button.value = question.answers[i].isTrue ? 1 : 0;
     }
     currentCount++;
-    if (currentCount == test.length)
-        endOfTest();
 }
 
 function beginOfTest(){

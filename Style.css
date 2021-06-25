@@ -8,7 +8,7 @@ body{
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.1fr 0.3fr 1.3fr 1.5fr 0.2fr 0.1fr;
+    grid-template-rows: 0.1fr 0.3fr 1.1fr 1.2fr 0.4fr 0.1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -45,29 +45,48 @@ body{
     grid-area: description;
     align-items: center;
     margin-bottom: 5px;
-    box-shadow: 0 0px 5px rgba(0,0,0,0.22);
   }
   
-  .lab1_con {grid-area: lab1_con;}
+  .lab1_con {
+    grid-area: lab1_con;
+  }
 
-  .lab2_con { grid-area: lab2_con; }
+  .lab2_con { 
+    grid-area: lab2_con; 
+  }
   
-  .test { grid-area: test; }
+  .test { 
+    grid-area: test;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+  }
   
-  .footer { grid-area: footer; }
+  .footer { 
+    grid-area: footer; 
+  }
+
+  .description, .test{
+    box-shadow: 0 0px 5px rgba(0,0,0,0.22);
+  }
+
+  .description, .description *, .test, .test *{
+    background-color: #fffff0;
+  }
 
   button {
-    color: #fff; /* цвет текста */
-    text-decoration: none; /* убирать подчёркивание у ссылок */
-    user-select: none; /* убирать выделение текста */
-    background: #fde910; /* фон кнопки */
-    padding: .7em 1.5em; /* отступ от текста */
-    outline: none; /* убирать контур в Mozilla */
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    user-select: none;
+    background: #fde910 !important;
+    padding: .7em 1.5em;
+    outline: none;
     border: 0;
   } 
-  button:active { background: #f3da0b; } /* при нажатии */
+  button:active { background: #f3da0b; }
 
-  h1, h3, button, ul p:first-child, .footer p{
+  h1, h3, button, ul p:first-child, .footer p, .test p{
     font-family: 'Raleway', sans-serif;   
   }
 
@@ -83,13 +102,9 @@ body{
     background-color: #fff;
   }
 
-  ul p:first-child, .footer p {
+  ul p:first-child, .footer p, .test{
     text-align: center;
-    font-size: 1.3em;
-  }
-
-  .description, .description *{
-    background-color: #fffff0;
+    font-size: 1.5em;
   }
 
   .description p{
@@ -111,5 +126,15 @@ body{
 
   .question_block, .end_block{
     display: none;
+  }
+
+  .next_btn{
+
+  }
+
+  .next_btn, .test_run_btn, .final_btn{
+    margin-bottom: 2%;
+    font-size: 1em;
+    width: 70%;
   }
   
