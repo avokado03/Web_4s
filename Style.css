@@ -1,15 +1,14 @@
-.div_hidden{
-    display: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-.div_visible{
-    display: grid;
+body{
+    background-image: url("sources/back.jpg");
+    margin: 0 5%;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr 9fr 9fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.3fr 1.3fr 1.5fr 0.2fr 0.1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -19,17 +18,20 @@
       "lab2_con lab2_con lab2_con"
       "test test test"
       "footer footer footer";
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   
   .header {
     display: grid;
-    grid-template-columns: 0.5fr 3fr 0.5fr 0.7fr;
+    grid-template-columns: 0.5fr 3fr 0.7fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       ". . . .";
     grid-area: header;
+    align-items: center;
+    
   }
   
   .description {
@@ -41,6 +43,9 @@
     grid-template-areas:
       ". .";
     grid-area: description;
+    align-items: center;
+    margin-bottom: 5px;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.22);
   }
   
   .lab1_con {grid-area: lab1_con;}
@@ -50,5 +55,57 @@
   .test { grid-area: test; }
   
   .footer { grid-area: footer; }
-  
+
+  button {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: #fde910; /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    border: 0;
+  } 
+  button:active { background: #f3da0b; } /* при нажатии */
+
+  h1, h3, button, ul p:first-child, .footer p{
+    font-family: 'Raleway', sans-serif;   
+  }
+
+  h1, h3, button{
+    color: black;
+  }
+
+  .sign_in{
+      width: 90%;
+  }
+
+  ul, div{
+    background-color: #fff;
+  }
+
+  ul p:first-child, .footer p {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .description, .description *{
+    background-color: #fffff0;
+  }
+
+  .description p{
+    margin: 0.5% 2%;
+    font-size: 1.3em;
+    text-indent: 3%;
+  }
+
+  hr {
+    margin: 20px 0;
+    padding: 0;
+    height: 2px;
+    border: none;
+    background-image: -webkit-linear-gradient(left, #fff, #0bda51, #fde910, #0bda51, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #0bda51, #fde910, #0bda51, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #0bda51, #fde910, #0bda51, #fff);
+    background-image: -o-linear-gradient(left, #fff, #0bda51, #fde910, #0bda51, #fff); 
+  }
   
