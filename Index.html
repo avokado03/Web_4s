@@ -7,6 +7,7 @@
   <script type="text/javascript" src="labs/lab1.js"></script>
   <script type="text/javascript" src="labs/lab2.js"></script>
   <script type="text/javascript" src="Script.js"></script>
+  <script type="text/javascript" src="test/test.js"></script>
   <title>JS</title>
 </head>
 
@@ -181,14 +182,20 @@
         </ul>
     </div>
     <div class="test">
-      <div>
-        <p>klfgklh</p>
+      <div class="start_block">
+        <p>Хотите проверить свои знания?</p>
+        <button class="test_run_btn" onclick="startTest()">Пройдите тест!</button>
       </div>
-      <div>
-        <p>klfgklh</p>
+      <div class="question_block">
+        <p class="test_header"></p>
+        <button class="next_btn answer_0"></button>
+        <button class="next_btn answer_1"></button>
+        <button class="next_btn answer_2"></button>
+        <button class="next_btn answer_3"></button>
       </div>
-      <div>
-        <p>klfgklh</p>
+      <div class="end_block">
+        <p class="test_result"></p>
+        <button class="final_btn">Завершить тест</button>
       </div>
     </div>
     <div class="footer">

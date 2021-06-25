@@ -108,4 +108,8 @@ body{
     background-image: -ms-linear-gradient(left, #fff, #0bda51, #fde910, #0bda51, #fff);
     background-image: -o-linear-gradient(left, #fff, #0bda51, #fde910, #0bda51, #fff); 
   }
+
+  .question_block, .end_block{
+    display: none;
+  }
   
