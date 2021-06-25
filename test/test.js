@@ -239,7 +239,7 @@ function setQuestion(e) {
         button.value = question.answers[i].isTrue;
     }
     currentCount++;
-    if (currentCount >= test.length)
+    if (currentCount == test.length)
         endOfTest();
 }
 
