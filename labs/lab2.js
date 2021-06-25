@@ -77,12 +77,15 @@ function l2_ninth(){
 
 //десятая
 function l2_tenth(){
-    let options = {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      };
-    alert(new Date().toLocaleString("ru", options));
+    let array = ["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декобря"];
+    let x = new Date();
+    let d = "";
+    let m = "";
+    let y = "";
+    d = x.getDate();
+    m = array[x.getMonth()];
+    y = x.getFullYear();
+    alert(d +" "+ m + " " + y + " года.");
 }
 
 //одиннадцатая
