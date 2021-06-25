@@ -7,142 +7,200 @@
   <script type="text/javascript" src="labs/lab1.js"></script>
   <script type="text/javascript" src="labs/lab2.js"></script>
   <script type="text/javascript" src="Script.js"></script>
-  <title>Привет, мир!</title>
+  <script type="text/javascript" src="test/test.js"></script>
+  <title>JS</title>
 </head>
 
 <body>
-  <button class="lab1_btn" onclick="toggleLab1()">Показать примеры заданий (1):</button>
-  <!--Задания из 1й практической-->
-  <div class="div_hidden lab1">
-    <ul>
-      <li>
-        <!--Задача 0-->
-        <h3>Задача 0</h3>
-        <p>Cоздать переменную, узнать ее тип, добавить вывод на экран текста, в зависимости от значения (if else)</p>
-        <p>(для примера взяты типы Number, String, Undefined)</p>
-        <button class="task_btn" onclick="zero(1)">Число</button>
-        <button class="task_btn" onclick="zero('str')">Строка</button>
-        <button class="task_btn" onclick="zero(undefined)">Undefined</button>
-        <hr>
-      </li>
-      <li>
-        <!--Задача 1-->
-        <h3>Задача 1</h3>
-        <p>Запросить у пользователя знак зодиака, и в зависимости от ответа выдать всплывающее окно приветствия
-          (вместо знака зодиака, можно запросить другие данные,предполагающие несколько вариантов ответа) (switch)</p>
-        <p>Для примера взяты знаки: весы, дева, скорпион, лев.</p>
-        <button class="task_btn" onclick="first()">Попробовать</button>
-        <hr>
-      </li>
-      <li>
-        <!--Задача 2-->
-        <h3>Задача 2</h3>
-        <p>Вывести все числа от 1 до 40, с использованием 3-х разных циклов</p>
-        <button class="task_btn" onclick="second()">Попробовать</button>
-        <hr>
-      </li>
-      <li>
-        <!--Задача 3-->
-        <h3>Задача 3</h3>
-        <p>Создайте вирусную страницу с постоянно повторяющемся сообщением</p>
-        <button class="task_btn" onclick="third()">Попробовать</button>
-        <hr>
-      </li>
-      <li>
-        <!-- Задача 4 -->
-        <h3>Задача 4</h3>
-        <p>Запросить у пользователя любое число больше 5, в случае правильного ответа выдать окошко с поздравлением,
-          в случае неправильного ответа вывести повторное окно с вопросом (помните, что пользователь может нажать
-          "отмена",
-          помните о типах данных)</p>
-        <button class="task_btn" onclick="fourth()">Попробовать</button>
-        <hr>
-      </li>
-      <li>
-        <!-- Задача 5 -->
-        <h3>Задача 5</h3>
-        <p>Выведите четные числа от 8 до 20</p>
-        <button class="task_btn" onclick="fifth()">Задача 5</button>
-        <hr>
-      </li>
-      <li>
-        <!-- Задача 6 -->
-        <h3>Задача 6</h3>
-        <p>Выведите нечетные числа от 1 до 7, пропустив 5</p>
-        <button class="task_btn" onclick="sixth()">Задача 6</button>
-        <hr>
-      </li>
-    </ul>
-  </div>
-  <button class="lab2_btn" onclick="toggleLab2()">Показать примеры заданий (2)</button>
-  <div class="div_hidden lab2">
-    <ul>
-      <li>
-        <!--Задача 1-->
-        <h3>Задача 1</h3>
-        <p>Создать массив 3 разными способами</p>
-        <button class="task_btn" onclick="l2_first()">Показать способы</button>
-        <hr>
-      </li>
-      <li>
-        <!--Задача 2-->
-        <h3>Задача 2</h3>
-        <p>выведите на экран 5 член вашего массива затем измените его значение </p>
-        <div>
-          <button class="task_btn" onclick="l2_second()">Попробовать</button>
-        </div>
-        <hr>
-      </li>
-      <li>
-        <!--Задача 3-->
-        <h3>Задача 3</h3>
-        <p>узнайте длину вашего массива и выведите ее значение при наведении на любой элемент</p>
-        <p>Массив: 1 2 3 4 5</p>
-        <p class="l2_third_result">-</p>
-        <button class="task_btn" onclick="l2_third()">Попробовать</button>
-        <button class="task_btn" onclick="l2_third_stop()">Остановить демонстрацию</button>
-        <hr>
-      </li>
-      <li>
-        <!--Задача 4-->
-        <h3>Задача 4</h3>
-        <p>выведите все элементы массива, используя цикл for</p>
-        <pre class="l2_fourth_result"></pre>
-        <button class="task_btn" onclick="l2_fourth()">Показать код</button>
-        <button class="task_btn l2_fourth_btn" onclick="clean('l2_fourth_result')">Скрыть код</button>
-        <hr>
-      </li>
-      <li>
-        <!--Задачи 5, 6, 7, 8-->
-        <h3>Задачи 5, 6, 7, 8</h3>
-        <p>Функции массивов: concat(), pop(), unshift()</p>
-        <pre class="l2_fifth_result"></pre>
-        <button class="task_btn" onclick="l2_arrayFunctions()">Показать код</button>
-        <button class="task_btn l2_fifth_btn" onclick="clean('l2_fifth_result')">Скрыть код</button>
-        <hr>
-      </li>
-      <li>
-        <!--Задача 9-->
-        <h3>Задача 9</h3>
-        <p>Получите сегодняшнюю дату и выведите ее на экран</p>
-        <button class="task_btn" onclick="l2_ninth()">Показать код</button>
-        <hr>
-      </li>
-      <li>
-        <!--Задача 10-->
-        <h3>Задача 10</h3>
-        <p>Выведите сегодняшнюю дату в формате 11 ноября 2020 года</p>
-        <button class="task_btn" onclick="l2_tenth()">Показать код</button>
-        <hr>
-      </li>
-      <li>
-        <!--Задача 11-->
-        <h3>Задача 11</h3>
-        <p>напишите функцию, подсчитывающую произведение двух случайных чисел в промежутке от нуля до 50</p>
-        <button class="task_btn" onclick="l2_eleventh()">Показать код</button>
-        <hr>
-      </li>
-    </ul>
+  <div class="container">
+    <div class="header">
+      <div>
+        <img src="sources/logo.png"/>
+      </div>
+      <div>
+        <h1>Сайт о JavaScript для начинающих</h1>
+      </div>
+      <div>
+        <button class="sign_in" onclick="hello()">Войти</button>
+      </div>
+      <div>
+        <p class="hello"></p>
+      </div>
+    </div>
+    <div class="description">
+      <div class="description_img">
+        <img src="sources/js.jpg"/>
+      </div>
+      <div>
+        <p><b>JavaScript</b> — это язык программирования, выполняемый непосредственно в браузере. 
+          Программы, написанные на нем, называют скриптами, и они интегрируются непосредственно в 
+          страницу различными способами. Результат выполнения сценариев отображается на странице, 
+          вызывая какие то изменения на ней, а может и не отображаться, если это не предусмотрено. </p>
+        <p>
+          В мире есть большое количество самых разнообразных устройств, с которых можно просматривать сайты 
+          и у них всех разные размеры экранов. Скрипт присутствующий на страницах этого сайта, проверяет 
+          разрешение монитора и подстраивает ширину страницы под его разрешение.
+        </p>
+        <p>Зачем еще нужен JavaScript? Например, для проверки форм на корректность заполнения без 
+          отправки данных на сервер, то есть вам сразу выводится сообщение, что поле заполнено неверно или 
+          что логин уже занят.</p>
+      </div>
+    </div>
+    <div class="lab1_con">
+      <!--Задания из 1й практической-->
+      <div class="lab1">
+        <ul> <p>Демонстрация основных возможностей JS</p>
+          <li>
+            <!--Задача 0-->
+            <h3>Задача 0</h3>
+            <p>Cоздать переменную, узнать ее тип, добавить вывод на экран текста, в зависимости от значения (if else)
+            </p>
+            <p>(для примера взяты типы Number, String, Undefined)</p>
+            <button class="task_btn" onclick="zero(1)">Число</button>
+            <button class="task_btn" onclick="zero('str')">Строка</button>
+            <button class="task_btn" onclick="zero(undefined)">Undefined</button>
+            <hr>
+          </li>
+          <li>
+            <!--Задача 1-->
+            <h3>Задача 1</h3>
+            <p>Запросить у пользователя знак зодиака, и в зависимости от ответа выдать всплывающее окно приветствия
+              (вместо знака зодиака, можно запросить другие данные,предполагающие несколько вариантов ответа) (switch)
+            </p>
+            <p>Для примера взяты знаки: весы, дева, скорпион, лев.</p>
+            <button class="task_btn" onclick="first()">Попробовать</button>
+            <hr>
+          </li>
+          <li>
+            <!--Задача 2-->
+            <h3>Задача 2</h3>
+            <p>Вывести все числа от 1 до 40, с использованием 3-х разных циклов</p>
+            <button class="task_btn" onclick="second()">Попробовать</button>
+            <hr>
+          </li>
+          <li>
+            <!--Задача 3-->
+            <h3>Задача 3</h3>
+            <p>Создайте вирусную страницу с постоянно повторяющемся сообщением</p>
+            <button class="task_btn" onclick="third()">Попробовать</button>
+            <hr>
+          </li>
+          <li>
+            <!-- Задача 4 -->
+            <h3>Задача 4</h3>
+            <p>Запросить у пользователя любое число больше 5, в случае правильного ответа выдать окошко с поздравлением,
+              в случае неправильного ответа вывести повторное окно с вопросом (помните, что пользователь может нажать
+              "отмена",
+              помните о типах данных)</p>
+            <button class="task_btn" onclick="fourth()">Попробовать</button>
+            <hr>
+          </li>
+          <li>
+            <!-- Задача 5 -->
+            <h3>Задача 5</h3>
+            <p>Выведите четные числа от 8 до 20</p>
+            <button class="task_btn" onclick="fifth()">Задача 5</button>
+            <hr>
+          </li>
+          <li>
+            <!-- Задача 6 -->
+            <h3>Задача 6</h3>
+            <p>Выведите нечетные числа от 1 до 7, пропустив 5</p>
+            <button class="task_btn" onclick="sixth()">Задача 6</button>
+            <hr>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="lab2_con">
+        <ul> <p>Работа с массивами и функциями</p>
+          <li>
+            <!--Задача 1-->
+            <h3>Задача 1</h3>
+            <p>Создать массив 3 разными способами</p>
+            <button class="task_btn" onclick="l2_first()">Показать способы</button>
+            <hr>
+          </li>
+          <li>
+            <!--Задача 2-->
+            <h3>Задача 2</h3>
+            <p>выведите на экран 5 член вашего массива затем измените его значение </p>
+            <div>
+              <button class="task_btn" onclick="l2_second()">Попробовать</button>
+            </div>
+            <hr>
+          </li>
+          <li>
+            <!--Задача 3-->
+            <h3>Задача 3</h3>
+            <p>узнайте длину вашего массива и выведите ее значение при наведении на любой элемент</p>
+            <p>Массив: 1 2 3 4 5</p>
+            <p class="l2_third_result">-</p>
+            <button class="task_btn" onclick="l2_third()">Попробовать</button>
+            <button class="task_btn" onclick="l2_third_stop()">Остановить демонстрацию</button>
+            <hr>
+          </li>
+          <li>
+            <!--Задача 4-->
+            <h3>Задача 4</h3>
+            <p>выведите все элементы массива, используя цикл for</p>
+            <pre class="l2_fourth_result"></pre>
+            <button class="task_btn" onclick="l2_fourth()">Показать код</button>
+            <button class="task_btn l2_fourth_btn" onclick="clean('l2_fourth_result')">Скрыть код</button>
+            <hr>
+          </li>
+          <li>
+            <!--Задачи 5, 6, 7, 8-->
+            <h3>Задачи 5, 6, 7, 8</h3>
+            <p>Функции массивов: concat(), pop(), unshift()</p>
+            <pre class="l2_fifth_result"></pre>
+            <button class="task_btn" onclick="l2_arrayFunctions()">Показать код</button>
+            <button class="task_btn l2_fifth_btn" onclick="clean('l2_fifth_result')">Скрыть код</button>
+            <hr>
+          </li>
+          <li>
+            <!--Задача 9-->
+            <h3>Задача 9</h3>
+            <p>Получите сегодняшнюю дату и выведите ее на экран</p>
+            <button class="task_btn" onclick="l2_ninth()">Показать код</button>
+            <hr>
+          </li>
+          <li>
+            <!--Задача 10-->
+            <h3>Задача 10</h3>
+            <p>Выведите сегодняшнюю дату в формате 11 ноября 2020 года</p>
+            <button class="task_btn" onclick="l2_tenth()">Показать код</button>
+            <hr>
+          </li>
+          <li>
+            <!--Задача 11-->
+            <h3>Задача 11</h3>
+            <p>напишите функцию, подсчитывающую произведение двух случайных чисел в промежутке от нуля до 50</p>
+            <button class="task_btn" onclick="l2_eleventh()">Показать код</button>
+            <hr>
+          </li>
+        </ul>
+    </div>
+    <div class="test">
+      <div class="start_block">
+        <p>Хотите проверить свои знания?</p>
+        <button class="test_run_btn" onclick="startTest()">Пройдите тест!</button>
+      </div>
+      <div class="question_block">
+        <p class="test_header"></p>
+        <button class="next_btn answer_0"></button> <br>
+        <button class="next_btn answer_1"></button> <br>
+        <button class="next_btn answer_2"></button> <br>
+        <button class="next_btn answer_3"></button> <br>
+      </div>
+      <div class="end_block">
+        <p class="test_result"></p>
+        <button class="final_btn">Завершить тест</button>
+      </div>
+    </div>
+    <div class="footer">
+        <p>Балашова А.В. б1ИФСТипу21. 2021г.</p>
+    </div>
   </div>
 </body>
 
